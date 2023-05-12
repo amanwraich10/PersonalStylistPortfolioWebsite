@@ -1,0 +1,41 @@
+@import url(../../App.scss);
+
+.about {
+	&__div {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__intro {
+		width: 530px;
+		margin: 20px;
+		font-size: 25px;
+		letter-spacing: 1.5px;
+	}
+
+	&__image {
+		height: 500px;
+		width: 500px;
+		border: 10px solid white;
+		margin-top: 50px;
+		// margin-right: 60px;
+	}
+}
+
+.iconone {
+	width: 25px;
+	height: 25px;
+	margin-top: 10px;
+}
+.icontwo {
+	width: 25px;
+	height: 25px;
+	margin-top: 430px;
+	margin-left: -20px;
+}
+
+.divtwo {
+	display: flex;
+	// margin: 100px;
+	margin-top: 70px;
+}

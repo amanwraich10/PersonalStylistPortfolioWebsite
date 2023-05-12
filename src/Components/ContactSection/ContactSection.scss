@@ -1,0 +1,26 @@
+@import url(../../App.scss);
+
+.contact {
+	&__heading {
+		text-align: center;
+		width: 100%;
+		border-bottom: 1px solid black;
+	}
+
+	&__form {
+		text-align: left;
+		border: 1px solid black;
+		height: 500px;
+		width: 500px;
+		margin: auto;
+	}
+
+	&__label {
+		text-align: left;
+		display: block;
+	}
+	&__span {
+		text-align: left;
+		display: block;
+	}
+}

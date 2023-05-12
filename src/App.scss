@@ -1,0 +1,35 @@
+@font-face {
+	font-family: MontserratRegular;
+	src: url(./Assets/Fonts/Montserrat/static/Montserrat-Light.ttf)
+		format("truetype");
+}
+
+@font-face {
+	font-family: MontserratBold;
+	src: url(./Assets/Fonts/Montserrat/static/Montserrat-Bold.ttf)
+		format("truetype");
+}
+
+@font-face {
+	font-family: MontserratMedium;
+	src: url(./Assets/Fonts/Montserrat/static/Montserrat-Medium.ttf)
+		format("truetype");
+}
+
+@font-face {
+	font-family: MontserratExtraLight;
+	src: url(./Assets/Fonts/Montserrat/static/Montserrat-ExtraLight.ttf)
+		format("truetype");
+}
+
+@font-face {
+	font-family: MontserratExtraLight;
+	src: url(./Assets/Fonts/Montserrat/static/Montserrat-ExtraLight.ttf)
+		format("truetype");
+}
+
+body {
+	font-family: MontserratRegular;
+	background-color: #dedede;
+	margin-top: 30px;
+}

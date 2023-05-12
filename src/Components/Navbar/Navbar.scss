@@ -1,0 +1,58 @@
+@import url(../../App.scss);
+
+.navbar {
+	&__heading {
+		display: flex;
+		justify-content: center;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 100px;
+	}
+	&__sub-heading {
+		font-family: MontserratExtraLight;
+		display: flex;
+		justify-content: center;
+		margin-top: 0px;
+		font-size: 40px;
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		font-family: MontserratRegular;
+	}
+
+	&__list-item {
+		// text-decoration: none;
+		// color: black;
+		letter-spacing: 1.5px;
+	}
+
+	&__list-item:hover {
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 1.5px;
+		// border-bottom: 1px solid black;
+		// padding-bottom: -10px;
+		// color: black;
+	}
+	&__list-item.active {
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 1.5px;
+		// border-bottom: 1px solid black;
+		// padding-bottom: -10px;
+		// color: black;
+	}
+
+	// Link:active {
+	// 	text-decoration: underline;
+	// 	text-decoration-thickness: 1px;
+	// }
+
+	&__link {
+		text-decoration: none;
+		color: black;
+	}
+}
