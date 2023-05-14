@@ -1,58 +1,146 @@
-@import url(../../App.scss);
+@import "../../App.scss";
+
+.wrapper-menu {
+	width: 40px;
+	height: 40px;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: transform 330ms ease-out;
+}
+
+.wrapper-menu.open {
+	transform: rotate(-45deg);
+}
+
+.line-menu {
+	background-color: #080707;
+	border-radius: 0px;
+	width: 100%;
+	height: 6px;
+}
+
+.line-menu.half {
+	width: 50%;
+}
+
+.line-menu.start {
+	transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+	transform-origin: right;
+}
+
+.open .line-menu.start {
+	transform: rotate(-90deg) translateX(3px);
+}
+
+.line-menu.end {
+	align-self: flex-end;
+	transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+	transform-origin: left;
+}
+
+.open .line-menu.end {
+	transform: rotate(-90deg) translateX(-3px);
+}
 
 .navbar {
-	&__heading {
-		display: flex;
-		justify-content: center;
-		margin-top: 0px;
-		margin-bottom: 0px;
-		font-size: 100px;
-	}
-	&__sub-heading {
-		font-family: MontserratExtraLight;
-		display: flex;
-		justify-content: center;
-		margin-top: 0px;
-		font-size: 40px;
+	@include mobile {
+		&__heading {
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+			margin-bottom: 5px;
+			font-size: 32px;
+			width: 100%;
+		}
+
+		&__sub-heading {
+			font-family: MontserratExtraLight;
+			display: flex;
+			justify-content: center;
+			margin-top: 0px;
+			font-size: 15px;
+		}
+
+		&__list {
+			margin-left: 0px;
+			padding-left: 0px;
+			margin-bottom: 0px;
+			list-style: none;
+			display: none;
+			font-family: MontserratRegular;
+			letter-spacing: 0.2px;
+		}
+
+		&__list-item {
+			text-align: center;
+			padding-bottom: 100px;
+			font-size: 19px;
+			font-family: MontserratRegular;
+		}
+
+		&__list-item:hover {
+			text-decoration: underline;
+			text-decoration-thickness: 1px;
+			text-underline-offset: 1.5px;
+		}
+		&__list-item.active {
+			text-decoration: underline;
+			text-decoration-thickness: 1px;
+			text-underline-offset: 1.5px;
+		}
+
+		&__link {
+			text-decoration: none;
+			color: black;
+		}
 	}
 
-	&__list {
-		list-style: none;
-		display: flex;
-		justify-content: space-around;
-		font-family: MontserratRegular;
-	}
+	@include tablet {
+		&__heading {
+			font-size: 55px;
+		}
 
-	&__list-item {
-		// text-decoration: none;
-		// color: black;
-		letter-spacing: 1.5px;
-	}
+		&__sub-heading {
+			font-size: 25px;
+		}
 
-	&__list-item:hover {
-		text-decoration: underline;
-		text-decoration-thickness: 1px;
-		text-underline-offset: 1.5px;
-		// border-bottom: 1px solid black;
-		// padding-bottom: -10px;
-		// color: black;
-	}
-	&__list-item.active {
-		text-decoration: underline;
-		text-decoration-thickness: 1px;
-		text-underline-offset: 1.5px;
-		// border-bottom: 1px solid black;
-		// padding-bottom: -10px;
-		// color: black;
-	}
+		&__list {
+			display: none;
+			letter-spacing: 0.2px;
+		}
 
-	// Link:active {
-	// 	text-decoration: underline;
-	// 	text-decoration-thickness: 1px;
-	// }
+		&__list-item {
+			font-size: 20px;
+		}
+	}
+}
 
-	&__link {
-		text-decoration: none;
-		color: black;
+.navbar {
+	@include desktop {
+		&__heading {
+			margin-bottom: 0px;
+			font-size: 100px;
+		}
+		&__sub-heading {
+			font-size: 40px;
+		}
+
+		&__list {
+			display: flex;
+			justify-content: space-around;
+		}
+		&__list-item {
+			letter-spacing: 1.5px;
+			padding-bottom: 0px;
+		}
+	}
+}
+
+@include desktop {
+	.wrapper-menu {
+		display: none;
 	}
 }

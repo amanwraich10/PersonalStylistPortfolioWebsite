@@ -1,41 +1,73 @@
-@import url(../../App.scss);
+@import "../../App.scss";
 
 .about {
-	&__div {
-		display: flex;
-		justify-content: space-around;
-	}
-
-	&__intro {
-		width: 530px;
-		margin: 20px;
-		font-size: 25px;
-		letter-spacing: 1.5px;
-	}
-
-	&__image {
-		height: 500px;
-		width: 500px;
-		border: 10px solid white;
+	@include mobile {
 		margin-top: 50px;
-		// margin-right: 60px;
+		padding-bottom: 20px;
+
+		&__image-div {
+			width: 80%;
+			margin: auto;
+		}
+
+		&__image {
+			width: 90%;
+			margin: auto;
+			border: 20px solid white;
+		}
+
+		&__div-intro {
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+		&__intro {
+			width: 80%;
+			margin: 30px auto;
+			font-size: 20px;
+			letter-spacing: 1.5px;
+		}
 	}
-}
 
-.iconone {
-	width: 25px;
-	height: 25px;
-	margin-top: 10px;
-}
-.icontwo {
-	width: 25px;
-	height: 25px;
-	margin-top: 430px;
-	margin-left: -20px;
-}
+	@include tablet {
+		padding-bottom: 30px;
+		margin-top: 0px;
 
-.divtwo {
-	display: flex;
-	// margin: 100px;
-	margin-top: 70px;
+		&__intro {
+			font-size: 25px;
+			margin: 40px auto;
+		}
+
+		&__image-div {
+			width: 80%;
+			margin: auto;
+		}
+
+		&__image {
+			width: 94%;
+			margin-top: 50px;
+		}
+	}
+
+	@include desktop {
+		padding-bottom: 50px;
+		&__intro {
+			width: 80%;
+			margin-top: 70px;
+			font-size: 25px;
+			letter-spacing: 1.5px;
+		}
+
+		&__image {
+			width: 92%;
+			border: 20px solid white;
+			margin-top: 50px;
+		}
+
+		&__div-intro {
+			display: flex;
+			flex-direction: row-reverse;
+			gap: 200px;
+			margin: 20px 110px;
+		}
+	}
 }

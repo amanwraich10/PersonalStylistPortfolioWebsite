@@ -1,44 +1,129 @@
-@import url(../../App.scss);
+@import "../../App.scss";
 
-.image__div {
-	width: 400px;
+.womenImage {
+	@include mobile {
+		&__div-single {
+			display: flex;
+			margin-bottom: 50px;
+		}
+
+		&__div {
+			margin-top: 70px;
+			margin-bottom: 70px;
+		}
+
+		&--women {
+			width: 80%;
+			margin: auto;
+		}
+	}
 }
 
-.image {
-	width: 400px;
-	&__twelve {
-		border-bottom: 12px solid black;
+@include tablet {
+	.image__nine {
+		border-top: 25px solid white;
+		border-bottom: 25px solid white;
 	}
 
-	&__fourteen {
+	.image__twelve {
+		border-top: 5px solid white;
+		border-bottom: 5px solid white;
+	}
+
+	.image__fourteen {
+		border-top: 20px solid white;
+		border-bottom: 20px solid white;
+	}
+
+	.image__ten {
+		border-top: 55px solid white;
+		border-bottom: 55px solid white;
+	}
+
+	.image__eighteen {
+		border-top: 23px solid white;
+		border-bottom: 23px solid white;
+	}
+
+	.image__ninteen {
+		border-top: 78px solid white;
+		border-bottom: 78px solid white;
+	}
+
+	.image__twenty {
 		border-top: 30px solid white;
 		border-bottom: 30px solid white;
 	}
 
-	&__ten {
-		border-top: 24px solid white;
-		border-bottom: 24px solid white;
-	}
+	.womenImage {
+		&__div-single {
+			width: 50%;
+			margin-bottom: 50px;
+		}
 
-	&__thirteen {
-		border-top: 5px solid black;
-		border-bottom: 5px solid black;
-	}
-	&__eighteen {
-		border-top: 29px solid black;
-		border-bottom: 29px solid black;
-	}
+		&__div {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 30px;
+		}
 
-	&__ninteen {
-		border-top: 100px solid white;
-		border-bottom: 100px solid white;
+		&--women {
+			width: 80%;
+			margin: auto;
+		}
 	}
 }
 
-.image__four {
-	width: 385px;
-	// height: 400px;
-	border-top: 20px solid white;
-	border-right: 20px solid white;
-	// margin: 20px;
+@include desktop {
+	.image__nine {
+		border-top: 42px solid white;
+		border-bottom: 42px solid white;
+	}
+
+	.image__twelve {
+		border-top: 8px solid white;
+		border-bottom: 8px solid white;
+	}
+
+	.image__fourteen {
+		border-top: 32px solid white;
+		border-bottom: 32px solid white;
+	}
+
+	.image__ten {
+		border-top: 96px solid white;
+		border-bottom: 96px solid white;
+	}
+
+	.image__eighteen {
+		border-top: 40px solid white;
+		border-bottom: 37px solid white;
+	}
+
+	.image__ninteen {
+		border-top: 135px solid white;
+		border-bottom: 135px solid white;
+	}
+
+	.image__twenty {
+		border-top: 53px solid white;
+		border-bottom: 53px solid white;
+	}
+
+	.womenImage {
+		&__div-single {
+			width: 50%;
+			margin-bottom: 100px;
+		}
+
+		&__div {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 50px 40px 0px;
+		}
+
+		&--women {
+			width: 80%;
+		}
+	}
 }

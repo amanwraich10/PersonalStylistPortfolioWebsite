@@ -1,26 +1,143 @@
-@import url(../../App.scss);
+@import "../../App.scss";
 
-.contact {
-	&__heading {
-		text-align: center;
-		width: 100%;
-		border-bottom: 1px solid black;
+@include mobile {
+	.contact__button::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border: var(--border-size) solid black;
+		transition: top, left, bottom, right, 100ms ease-in-out;
 	}
 
-	&__form {
-		text-align: left;
-		border: 1px solid black;
-		height: 500px;
-		width: 500px;
-		margin: auto;
+	.contact__button:hover:before {
+		top: calc(var(--border-size) * -3);
+		left: calc(var(--border-size) * -3);
+		right: calc(var(--border-size) * -3);
+		bottom: calc(var(--border-size) * -3);
 	}
 
-	&__label {
-		text-align: left;
-		display: block;
+	.contact {
+		padding-bottom: 60px;
+		&__heading {
+			text-align: center;
+			font-size: 35px;
+			margin-top: 50px;
+			font-family: MontserratExtraLight;
+		}
+
+		&__form {
+			padding: 10px;
+			text-align: left;
+			background-color: white;
+			width: 70%;
+			margin: auto;
+		}
+
+		&__label {
+			text-align: left;
+			display: block;
+		}
+		&__span {
+			text-align: left;
+			display: block;
+			font-size: 18px;
+			padding: 10px;
+		}
+
+		&__input {
+			background-color: #dedede;
+			border: none;
+			padding: 10px;
+			width: 88%;
+			margin-left: 10px;
+			font-family: MontserratRegular;
+		}
+
+		&__button {
+			width: 120px;
+			margin: 20px auto;
+			display: flex;
+			justify-content: center;
+			padding: 8px;
+			font-size: 20px;
+			font-family: MontserratMedium;
+			background-color: #dedede;
+			border: 0.5px solid black;
+			outline: none;
+			position: relative;
+			--border-size: 2px;
+			cursor: pointer;
+		}
 	}
-	&__span {
-		text-align: left;
-		display: block;
+}
+
+@include tablet {
+	.contact {
+		padding-bottom: 70px;
+
+		&__heading {
+			font-size: 35px;
+			margin-top: 50px;
+		}
+
+		&__form {
+			padding: 20px;
+			width: 75%;
+		}
+
+		&__span {
+			font-size: 20px;
+			padding: 10px 10px 10px 20px;
+		}
+
+		&__input {
+			padding: 12px;
+			margin-left: 20px;
+			font-size: 15px;
+		}
+
+		&__button {
+			width: 150px;
+			margin: 30px auto;
+			padding: 13px;
+			font-size: 25px;
+		}
+	}
+}
+
+@include desktop {
+	.contact {
+		padding-bottom: 90px;
+
+		&__heading {
+			font-size: 40px;
+			margin-top: 50px;
+		}
+
+		&__form {
+			padding: 20px;
+			width: 50%;
+		}
+
+		&__span {
+			font-size: 23px;
+			padding: 10px 10px 10px 20px;
+		}
+
+		&__input {
+			padding: 15px;
+			margin-left: 20px;
+			font-size: 15px;
+		}
+
+		&__button {
+			width: 150px;
+			margin: 30px auto;
+			padding: 13px;
+			font-size: 25px;
+		}
 	}
 }

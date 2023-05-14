@@ -1,3 +1,6 @@
+@import "./Styles/partials/breakpoints";
+@import "./Styles/partials/mixins";
+
 @font-face {
 	font-family: MontserratRegular;
 	src: url(./Assets/Fonts/Montserrat/static/Montserrat-Light.ttf)
@@ -22,14 +25,9 @@
 		format("truetype");
 }
 
-@font-face {
-	font-family: MontserratExtraLight;
-	src: url(./Assets/Fonts/Montserrat/static/Montserrat-ExtraLight.ttf)
-		format("truetype");
-}
-
 body {
 	font-family: MontserratRegular;
 	background-color: #dedede;
-	margin-top: 30px;
+	margin: 0px;
+	margin-top: 0px;
 }

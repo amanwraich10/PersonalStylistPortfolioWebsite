@@ -9,58 +9,39 @@ import { motion } from "framer-motion";
 function Men() {
 	return (
 		<>
-			<div className="div">
+			<div className="image__div-men">
 				<motion.div
-					className="image__div"
+					className="image__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
-					<img className="image" src={image1} alt="image" />
+					<img className="image--men" src={image1} alt="image" />
 				</motion.div>
-
 				<motion.div
-					className="image__div"
+					className="image__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
-					<img className="image" src={image2} alt="image" />
+					<img className="image--men" src={image2} alt="image" />
 				</motion.div>
-
 				<motion.div
-					className="image__div"
+					className="image__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
-					<img className="image" src={image3} alt="image" />
+					<img
+						className="image__four--men"
+						src={image4}
+						alt="image"
+					/>
 				</motion.div>
-
 				<motion.div
-					className="image__div"
+					className="image__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
-					<img className="image__four" src={image4} alt="image" />
+					<img className="image--men" src={image5} alt="image" />
 				</motion.div>
-
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image5} alt="image" />
-				</motion.div>
-
-				{/* <motion.div
-					className="image"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					// whileHover={{ scale: [1.3] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img src={image2} alt="image" />
-				</motion.div> */}
-				{/* <div className="imgBox">
-					<img src={image1} alt="image" className="image2" />
-				</div> */}
 			</div>
 		</>
 	);

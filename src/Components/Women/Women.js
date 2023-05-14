@@ -27,262 +27,317 @@ import image24 from "../../Assets/ImagesWomen/Image24.PNG";
 import image25 from "../../Assets/ImagesWomen/Image25.PNG";
 import image26 from "../../Assets/ImagesWomen/Image26.PNG";
 import image27 from "../../Assets/ImagesWomen/Image27.PNG";
-// import * as images from "../../images";
 
 function Women() {
 	return (
 		<>
-			<div className="div">
+			<div className="womenImage__div">
 				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image1} alt="image" />
-				</motion.div>
-
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image3} alt="image" />
-				</motion.div>
-
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image2} alt="image" />
-				</motion.div>
-
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image9} alt="image" />
-				</motion.div>
-
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image5} alt="image" />
-				</motion.div>
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image6} alt="image" />
-				</motion.div>
-
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image7} alt="image" />
-				</motion.div>
-
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image8} alt="image" />
-				</motion.div>
-
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image4} alt="image" />
-				</motion.div>
-
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image15} alt="image" />
-				</motion.div>
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image11} alt="image" />
-				</motion.div>
-
-				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
 					<img
-						className="image image__twelve"
+						className="womenImage--women"
+						src={image1}
+						alt="image"
+					/>
+				</motion.div>
+
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women"
+						src={image3}
+						alt="image"
+					/>
+				</motion.div>
+
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women"
+						src={image2}
+						alt="image"
+					/>
+				</motion.div>
+
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women"
+						src={image9}
+						alt="image"
+					/>
+				</motion.div>
+
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women"
+						src={image5}
+						alt="image"
+					/>
+				</motion.div>
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women"
+						src={image6}
+						alt="image"
+					/>
+				</motion.div>
+
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women"
+						src={image7}
+						alt="image"
+					/>
+				</motion.div>
+
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women"
+						src={image8}
+						alt="image"
+					/>
+				</motion.div>
+
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women image__nine"
+						src={image4}
+						alt="image"
+					/>
+				</motion.div>
+
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women"
+						src={image15}
+						alt="image"
+					/>
+				</motion.div>
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women"
+						src={image11}
+						alt="image"
+					/>
+				</motion.div>
+
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women image__twelve"
 						src={image12}
 						alt="image"
 					/>
 				</motion.div>
 
 				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
 					<img
-						className="image image__fourteen"
+						className="womenImage--women image__fourteen"
 						src={image14}
 						alt="image"
 					/>
 				</motion.div>
 
 				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
 					<img
-						className="image image__thirteen"
+						className="womenImage--women image__thirteen"
 						src={image13}
 						alt="image"
 					/>
 				</motion.div>
 
 				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
 					<img
-						className="image image__ten"
+						className="womenImage--women image__ten"
 						src={image10}
 						alt="image"
 					/>
 				</motion.div>
 				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image16} alt="image" />
-				</motion.div>
-
-				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
 					<img
-						className="image image__eighteen"
+						className="womenImage--women"
+						src={image16}
+						alt="image"
+					/>
+				</motion.div>
+
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women image__eighteen"
 						src={image18}
 						alt="image"
 					/>
 				</motion.div>
 
 				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image17} alt="image" />
-				</motion.div>
-
-				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
 					<img
-						className="image image__ninteen"
+						className="womenImage--women"
+						src={image17}
+						alt="image"
+					/>
+				</motion.div>
+
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women image__ninteen"
 						src={image19}
 						alt="image"
 					/>
 				</motion.div>
 
 				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image20} alt="image" />
-				</motion.div>
-				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
 					<img
-						className="image image__ninteen"
+						className="womenImage--women"
+						src={image20}
+						alt="image"
+					/>
+				</motion.div>
+				<motion.div
+					className="womenImage__div-single"
+					whileHover={{ scale: [null, 1.1, 1.1] }}
+					transition={{ duration: 0.5 }}
+				>
+					<img
+						className="womenImage--women image__ninteen"
 						src={image21}
 						alt="image"
 					/>
 				</motion.div>
 
 				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
-					<img className="image" src={image22} alt="image" />
+					<img
+						className="womenImage--women image__twenty"
+						src={image27}
+						alt="image"
+					/>
 				</motion.div>
 
 				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
-					<img className="image" src={image23} alt="image" />
+					<img
+						className="womenImage--women"
+						src={image23}
+						alt="image"
+					/>
 				</motion.div>
 
 				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
-					<img className="image" src={image24} alt="image" />
+					<img
+						className="womenImage--women"
+						src={image24}
+						alt="image"
+					/>
 				</motion.div>
 
 				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
-					<img className="image" src={image25} alt="image" />
+					<img
+						className="womenImage--women"
+						src={image25}
+						alt="image"
+					/>
 				</motion.div>
 				<motion.div
-					className="image__div"
+					className="womenImage__div-single"
 					whileHover={{ scale: [null, 1.1, 1.1] }}
 					transition={{ duration: 0.5 }}
 				>
-					<img className="image" src={image26} alt="image" />
+					<img
+						className="womenImage--women"
+						src={image26}
+						alt="image"
+					/>
 				</motion.div>
-
-				<motion.div
-					className="image__div"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img className="image" src={image27} alt="image" />
-				</motion.div>
-
-				{/* <motion.div
-					className="image"
-					whileHover={{ scale: [null, 1.1, 1.1] }}
-					// whileHover={{ scale: [1.3] }}
-					transition={{ duration: 0.5 }}
-				>
-					<img src={image2} alt="image" />
-				</motion.div> */}
-				{/* <div className="imgBox">
-					<img src={image1} alt="image" className="image2" />
-				</div> */}
 			</div>
 		</>
 	);
