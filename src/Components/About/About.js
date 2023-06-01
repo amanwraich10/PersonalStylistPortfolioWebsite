@@ -1,7 +1,6 @@
-import image from "../../Assets/ImagesWomen/Image1.JPG";
+import image from "../../Assets/B8364B6F-20D6-453E-A6A6-8CB5F25C16B9.JPG";
+
 import "../About/About.scss";
-import icon1 from "../../Assets/double-quotes.png";
-import icon2 from "../../Assets/quote.png";
 import { motion } from "framer-motion";
 
 function About() {
@@ -18,10 +17,10 @@ function About() {
 					</motion.div>
 					<p className="about__intro">
 						At the tender age of 3, I discovered my love and
-						interest for the creative field. I started with learning
-						and portrait sketches which led me to be interested in
-						other forms of art and fashion. I believe that art has
-						no limits and boundries which allows my imagination to
+						interest for the creative field. I started learning with
+						portrait sketches which led me to be interested in other
+						forms of art and fashion. I believe that art has no
+						limits and boundries which allows my imagination to
 						thrive and showcase my artistic skills on different
 						platforms. In fashion, I enjoy being creative and am
 						able to see the meaning of the finished product. I
